@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/music-gta.mp3" type="audio/mpeg">  <!--Primeiro a tentar ser carregado-->
+        <source src="midias/music-gta.ogg" type="audio/ogg">   <!--Segundo a tentar ser carregado-->
+        <source src="midias/music-gta.wav" type="audio/wav">   <!--Terceiro a tentar ser carregado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio</p>   <!--Se nenhum der certo, mostrar esta mensagem.-->
+        <a href="midias/music-gta.mp3">Clique aqui para baixar o arquivo de áudio.</a>
+        <!--MP3, WAV, OGG-->
+    </audio>
+    <h1>Reproduzindo vídeos hospedados localmente</h1>
+    <!--Compatibilidade: MP4, M4V, WEBM, OGV-->
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/thumb.png" controls>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/Meu-Video.m4v" type="video/mp4">
+        <source src="midias/meu-video.webm" type="video/webm">
+        <p>Seu computador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!--CUIDADO COM TAMANHO DO VÍDEO!!!-->
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_9ekgZ8xvwc?si=VAUaxLUuFRgqtmfu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

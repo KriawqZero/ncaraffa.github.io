@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+* {
+    margin: 1px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgb(167, 231, 167), rgb(46, 77, 46));
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'droid';
+    src: url(idroid.otf) format(opentype);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+header {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.436);
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', Helvetica, sans-serif, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    padding: 20px;
+    font-size: 40px;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 575px;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+}
+
+nav  > a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    background-color: lightgreen;
+}
+
+main {
+    width: 720px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.327);
+    border-radius: 10px;
+}
+
+main > h1 {
+    font-family: 'droid', Arial, sans-serif;
+    padding: 15px;
+    color: rgb(12, 102, 12);
+    margin-left: auto;
+}
+
+main > h2 {
+    font-family: 'droid', Arial, sans-serif;
+    color: rgb(12, 102, 12);
+    background-color: rgba(144, 238, 144, 0.32);
+    padding: 10px;
+}
+
+main > p {
+    text-indent: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+
+nav > a::after {
+    content: none;
+}
+
+.main {
+    text-decoration: none;
+    color: rgb(14, 113, 14);
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgba(160, 205, 160, 0.714);
+    padding: 2px;
+    border-radius: 2px;
+}
+
+a:hover {
+    color: darkgreen;
+    background-color: lightgreen;
+    border-radius: 5px;
+    display: inline-flexbox;
+    padding-bottom: 1px;
+}
+
+a::after {
+    content: '🔗';
+}
+
+picture > #bugdroid {
+    border-width: 15px;
+    border-color: darkslategray;
+    border-style: double;
+}
+
+iframe {
+    border-width: 25px;
+    border-color: rgb(17, 135, 17);
+    margin: 0;
+    width: 670px;
+}
+
+div {
+    background-color: rgb(193, 216, 193);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    text-indent: 30px;
+}
+
+div > h3 {
+    
+    background-color: rgb(55, 120, 88);
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+div > p {
+    padding: 10px;
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    padding-right: 30%;
+}
+
+.listas ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.listas li {
+    padding: 3px 0;
+}
+
+footer {
+    background-color: rgba(15, 87, 15, 0.791);
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+footer > p {
+    margin: 1px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome {
+    font-size: 18px;
+    font-weight: bolder;
+}
