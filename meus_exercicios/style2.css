@@ -318,7 +318,7 @@ strong:hover {
 
 @media screen and (max-width: 767px) {
     header {
-        width: 95%;
+        width: 100%;
     }
     
     header > h1 {
@@ -345,26 +345,26 @@ strong:hover {
     }
     
     main {
-        width: 95%;
+        width: 93%;
         padding: 15px;
         margin-top: 10px;
         border-radius: 12px;
     }
     
     footer {
-        width: 95%;
+        width: 93%;
         margin-top: 8px;
         border-radius: 15px;
     }
     
     main > h1 {
-        width: 95%;
+        width: 93%;
         font-size: 1.2em;
         padding: 8px;
     }
     
     .p1, .p2, .p3 {
-        width: 95%;
+        width: 93%;
         padding: 15px;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -378,12 +378,12 @@ strong:hover {
     
     
     #imgnic {
-        width: 95%;
+        width: 93%;
         border-radius: 15px;
     }
     
     img {
-        width: 95%;
+        width: 93%;
         max-width: 280px;
     }
     
