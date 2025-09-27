@@ -413,7 +413,7 @@ abbr {
 
 @media screen and (max-width: 767px) {
     header {
-        width: 80vh;
+        width: 95%;
     }
 
     header > h1 {
