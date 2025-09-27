@@ -192,47 +192,6 @@ abbr {
     text-decoration: none;
 }
 
-@media screen and (max-width: 768px){
-    #imgnic {
-        width: 95%;
-        border-radius: 15px;
-    }
-
-    img {
-        width: 95%;
-        max-width: 250px;
-    }
-
-    main {
-        width: 95%;
-        padding: 12px;
-        margin-top: 10px;
-    }
-
-    footer {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    #imgnic {
-        width: 90%;
-        max-width: 350px;
-    }
-    img {
-        width: 200px;
-    }
-    main {
-        width: 90%;
-        max-width: 600px;
-        padding: 15px;
-    }
-
-    footer {
-        width: 90%;
-    }
-}
-
 #azul {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 255);
@@ -266,4 +225,169 @@ abbr {
 strong:hover {
     font-size: 20px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) {
+    header > h1 {
+        font-size: 6em;
+        padding: 30px;
+    }
+    
+    header > h3 {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+    
+    main {
+        width: 900px;
+        max-width: 900px;
+        padding: 30px;
+        margin-top: 20px;
+    }
+    
+    footer {
+        width: 960px;
+    }
+    
+    main > h1 {
+        width: 500px;
+        font-size: 1.5em;
+        padding: 15px;
+    }
+    
+    .p1, .p2, .p3 {
+        width: 600px;
+        padding: 25px;
+        font-size: 1.1em;
+    }
+    
+    #imgnic {
+        width: 500px;
+    }
+    
+    img {
+        width: 400px;
+    }
+    
+    nav > a {
+        padding: 8px 200px;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+    main {
+        width: 90%;
+        max-width: 600px;
+        padding: 18px;
+    }
+    
+    footer {
+        width: 90%;
+        max-width: 640px;
+    }
+    
+    main > h1 {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    .p1, .p2, .p3 {
+        width: 90%;
+        max-width: 400px;
+        padding: 18px;
+    }
+    
+    #imgnic {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    img {
+        width: 90%;
+        max-width: 280px;
+    }
+    
+    nav > a {
+        padding: 5px 120px;
+        font-size: 17px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    header > h1 {
+        font-size: 3em;
+        padding: 15px;
+    }
+    
+    header > h3 {
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 15px;
+    }
+    
+    nav > a {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    main {
+        width: 95%;
+        padding: 15px;
+        margin-top: 10px;
+        border-radius: 12px;
+    }
+    
+    footer {
+        width: 95%;
+        margin-top: 8px;
+        border-radius: 15px;
+    }
+    
+    main > h1 {
+        width: 95%;
+        font-size: 1.2em;
+        padding: 8px;
+    }
+    
+    .p1, .p2, .p3 {
+        width: 95%;
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    
+    #imgnic {
+        width: 95%;
+        border-radius: 15px;
+    }
+    
+    img {
+        width: 95%;
+        max-width: 280px;
+    }
+    
+    strong:hover {
+        font-size: 18px;
+    }
+    
+    a:hover {
+        font-size: 18px;
+    }
 }
