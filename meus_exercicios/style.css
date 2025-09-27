@@ -13,7 +13,7 @@ header {
     background-color: blue;
     text-align: center;
     color: white;
-
+    
 }
 
 header > h1 {
@@ -412,6 +412,10 @@ abbr {
 
 
 @media screen and (max-width: 767px) {
+    header {
+        width: 80vh;
+    }
+
     header > h1 {
         font-size: 3em;
         padding: 15px;
