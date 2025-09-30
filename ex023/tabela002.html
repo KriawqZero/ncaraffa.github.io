@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) {  /* 2n-1, Efeito zebrado para ímpar para linhas ímpares */
+
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+    
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    
+    -->
+
+    <!-- TH = TÍTULO DA COLUNA 
+     
+         TD = DADO DA COLUNA
+    -->
+
+    <!--
+    
+    A Anatomia é semântica, ela independe da posição
+    que foi colocada, sempre seguirá:
+
+    Cabeça, Corpo e Pé
+    
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio De Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso Do Sul</td>
+                <td class="num">12 924 631</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">4 924 631</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 924 631</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">9 924 631</td>
+            </tr>
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">6 924 631</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">1 924 631</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">5 924 631</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">16 924 631</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">724 631</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">1 623 532</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">4 924 631</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">4 527 631</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 824 631</td>
+            </tr>
+            <tr>
+                <td>Maceió</td>
+                <td class="num">3 924 631</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">13 924 631</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 502 631</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">5 965 753</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <strong>
+                    <td class="num">210 277 414</td>
+                </strong>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe doloremque alias hic optio, quasi maxime dolorem sunt, facere sapiente accusantium harum eaque minus! Itaque temporibus nulla tempora consequuntur praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquam molestias repudiandae corporis quaerat animi saepe qui quibusdam similique inventore quod, fuga obcaecati neque totam at modi quisquam eius provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam minus at reiciendis dolor, odio earum quasi harum reprehenderit pariatur molestias explicabo ullam provident itaque et architecto laboriosam quia ad similique. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae ut delectus error, velit enim architecto asperiores tempore maxime consequuntur praesentium eveniet facere amet rerum nisi aspernatur ipsa. Sit, sint aut?</p>
+</body>
+</html>
