@@ -228,6 +228,7 @@ strong:hover {
 }
 
 @media screen and (min-width: 1920px) {
+
     header > h1 {
         font-size: 6em;
         padding: 30px;
@@ -310,15 +311,15 @@ strong:hover {
     }
     
     nav > a {
-        padding: 5px 120px;
+        padding: 5px 85px;
         font-size: 17px;
     }
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width:601px) and (max-width: 767px) {
     header {
-        width: 50vh;
+        width: 100%;
     }
     
     header > h1 {
@@ -345,7 +346,7 @@ strong:hover {
     }
     
     main {
-        width: 93%;
+        width: 70%;
         padding: 15px;
         margin-top: 10px;
         border-radius: 12px;
@@ -384,6 +385,86 @@ strong:hover {
     
     img {
         width: 93%;
+        max-width: 280px;
+    }
+    
+    strong:hover {
+        font-size: 18px;
+    }
+    
+    a:hover {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+    
+    header > h1 {
+        font-size: 3em;
+        padding: 15px;
+    }
+    
+    header > h3 {
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 15px;
+    }
+    
+    nav > a {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    main {
+        width: 65vw;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 12px;
+    }
+    
+    footer {
+        width: 72%;
+        margin-top: 8px;
+        border-radius: 15px;
+    }
+    
+    main > h1 {
+        width: 80%;
+        font-size: 1.2em;
+        padding: 8px;
+    }
+    
+    .p1, .p2, .p3 {
+        width: 80%;
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    
+    #imgnic {
+        width: 90%;
+        border-radius: 15px;
+    }
+    
+    img {
+        width: 90%;
         max-width: 280px;
     }
     

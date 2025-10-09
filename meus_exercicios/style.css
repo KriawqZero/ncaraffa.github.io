@@ -532,14 +532,14 @@ abbr {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        width: 50vw;
+        width: 65vw;
         padding: 10px;
         margin-top: 10px;
         border-radius: 12px;
     }
     
     footer {
-        width: 80%;
+        width: 72%;
         margin-top: 8px;
         border-radius: 15px;
     }
