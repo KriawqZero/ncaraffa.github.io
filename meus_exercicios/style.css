@@ -366,7 +366,11 @@ abbr {
 }
 
 
-@media screen and (max-width: 1366px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) and (min-width: 768px) {
+    header {
+        width: 100%;
+    }
+
     main {
         width: 90%;
         max-width: 600px;
@@ -379,7 +383,7 @@ abbr {
     }
     
     main > h1 {
-        width: 90%;
+        width: 90vw;
         max-width: 350px;
     }
     
@@ -403,7 +407,7 @@ abbr {
         width: 90%;
         max-width: 280px;
     }
-    
+
     nav > a {
         padding: 5px 120px;
         font-size: 17px;
@@ -411,9 +415,9 @@ abbr {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 601px) and (max-width: 767px) {
     header {
-        width: 50vh;
+        width: 100%;
     }
 
     header > h1 {
@@ -440,7 +444,7 @@ abbr {
     }
     
     main {
-        width: 93%;
+        width: 50vw;
         padding: 15px;
         margin-top: 10px;
         border-radius: 12px;
@@ -483,6 +487,94 @@ abbr {
     
     img {
         width: 93%;
+        max-width: 280px;
+    }
+    
+    strong:hover {
+        font-size: 18px;
+    }
+    
+    a:hover {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    header > h1 {
+        font-size: 3em;
+        padding: 15px;
+    }
+    
+    header > h3 {
+        font-size: 1em;
+        padding-bottom: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 15px;
+    }
+    
+    nav > a {
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 80%;
+        text-align: center;
+    }
+    
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 12px;
+    }
+    
+    footer {
+        width: 80%;
+        margin-top: 8px;
+        border-radius: 15px;
+    }
+    
+    main > h1 {
+        width: 60%;
+        font-size: 1.2em;
+        padding: 8px;
+    }
+    
+    .p1, .p2, .p3, .p4, .p5 {
+        width: 60%;
+        padding: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 12px;
+    }
+    
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    #img2 {
+        width: 60%;
+        border-radius: 8px;
+    }
+    
+    #imgnic, #imgnic2 {
+        width: 60%;
+        border-radius: 15px;
+    }
+    
+    img {
+        width: 60%;
         max-width: 280px;
     }
     
