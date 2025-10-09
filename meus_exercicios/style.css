@@ -545,13 +545,13 @@ abbr {
     }
     
     main > h1 {
-        width: 60%;
+        width: 80%;
         font-size: 1.2em;
         padding: 8px;
     }
     
     .p1, .p2, .p3, .p4, .p5 {
-        width: 60%;
+        width: 80%;
         padding: 15px;
         margin-top: 15px;
         margin-bottom: 15px;
