@@ -4,30 +4,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+@font-face {
+    font-family: 'teste';
+    src: url('Demo_Fonts/Fontspring-DEMO-aestetico.otf');
+}
+
+@font-face {
+    font-family: 'teste2';
+    src: url('archopada/Archopada-Regular.ttf');
+}
+
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: blue;
+    background-color: #1e1e1e6b;
     text-align: center;
     color: white;
-    
+    backdrop-filter: blur(5px);
 }
 
 header > h1 {
     font-size: 5em;
-    padding: 20px;
-    font-family: Oswald, Arial, Helvetica, sans-serif;
+    padding: 20px 20px 0px 20px;
+    font-family: teste2, Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    text-shadow: 2px 4px 2px black;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.292);
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.05px rgba(0, 0, 0, 0.161);
+    margin-bottom: -10px;
+    
 }
 
 
 header > h3 {
     padding-bottom: 20px;
-    text-shadow: 2px 3px 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.225);
+    margin-bottom: 25px;
 }
 
 nav {
@@ -35,44 +54,49 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    
 }
 
 nav > a {
     margin:auto;
+    margin-bottom: 7px;
     padding: 5px 175px 5px 175px;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(37, 36, 36, 0.258);
+    background-color: rgba(255, 255, 255, 0.808);
     font-size: 18px;
     transition-duration: 0.7s;
     text-decoration: none;
-    color: blue;
-    text-shadow: 2px 1px 2px black;
+    color: rgb(119, 121, 137);
+    text-shadow: 0px 0.3px 0.5px rgba(15, 17, 35, 0.495);
+    border-radius: 9px;
 }
 
 nav > a:hover {
-    background-color: rgb(146, 192, 223);
+    background-color: rgb(185, 162, 124);
     transition-duration: 0.5s;
     text-decoration: underline;
 }
+
 
 
 main {
     background-color: white;
     width: 700px;
     margin: auto;
-    border: 3px solid black;
+    border: 3px solid rgba(0, 0, 0, 0.397);
     border-radius: 15px;
     padding: 20px;
     margin-top: 15px;
     max-width: 700px;
     min-width: 300px;
-    box-shadow: 5px 5px 5px rgb(255, 216, 143);
+    box-shadow: 5px 5px 5px rgba(96, 66, 9, 0.543);
+    
 }
 
 main > h1 {
     font-family: Oswald, Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-color: lightblue;
+    background-color: hwb(46 61% 15%);
     border-radius: 10px;
     width: 400px;
     display: block;
@@ -84,8 +108,9 @@ body {
     background-image: url('imagens/1595602729894.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: lightblue;
+    background-color: rgb(209, 168, 109);
     background-size: cover;
+    
 }
 
 img {
@@ -168,7 +193,7 @@ main > p {
 }
 
 main > h1:hover {
-    background-color: rgb(159, 159, 222);
+    background-color: rgb(185, 162, 124);
     cursor: pointer;
     animation: pop 1.5s infinite ease-in-out;
 }
@@ -196,7 +221,7 @@ footer > p {
 a {
     text-decoration: none;
     font-weight: bolder;
-    color: blue;
+    color: rgb(85, 62, 31);
 }
 
 a:hover {
@@ -239,9 +264,10 @@ a:hover {
 }
 
 .nada {
-    border: 1px solid black;
-    height: 20px;
-    background-color: black;
+    border: 0px solid rgb(0, 0, 0);
+    height: 6px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.350), rgba(0, 0, 0, 0.353));
+    
 }
 
 abbr {
@@ -250,7 +276,7 @@ abbr {
 
 #nomes {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
-    background-color: rgb(0, 0, 255);
+    background-color: rgb(180, 169, 129);
     border-radius: 10px;
     padding: 3px 3px 1px 3px;
     color: white;
@@ -411,6 +437,7 @@ abbr {
     nav > a {
         padding: 5px 85px;
         font-size: 17px;
+        
     }
 }
 
